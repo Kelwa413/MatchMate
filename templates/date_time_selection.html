@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book A Field!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/date_time_selection.css') }}">
+
+</head>
+<body>
+    <h1>Join The Game!</h1>
+    <form action="/submit_booking" method="post">
+        
+        <label for="field">Field:</label>
+        <select id="field" name="field" required>
+            <option value="Calgary Soccer Center Field 1">Calgary Soccer Center Field 1</option>
+            <option value="Calgary Soccer Center Field 2">Calgary Soccer Center Field 2</option>
+            <option value ="Calgary Soccer Center Field 3">Calgary Soccer Center Field 3</option>
+            <option value ="Genisis Center Field 1">Genisis Center Field 1</option>
+            <option value ="Genisis Center Field 2">Genisis Center Field 2</option>
+            <option value="test test">Test test</option>
+        </select><br><br>
+
+        <label for="datetime">Date and Time:</label>
+        <input type="datetime-local" id="datetime" name="datetime" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

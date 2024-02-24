@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Soccer Field Booking App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to MatchMate!</h1>
+    </header>
+    
+    <section id="about">
+        <h2>About Our App</h2>
+        <p>This app lets you find a group to book a field with locally on your own schedule</p>
+    </section>
+    
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>View available fields</li>
+            <li>Book your spot</li>
+            <li>Autobooking once a certain number of players is reached</li>
+            
+            <li>Special discounts for team captains</li>
+        </ul>
+    </section>
+    
+    <section id="fields">
+        <h2>Fields</h2>
+            <div class="img-container">
+            <img src="{{ url_for('static', filename='images/Genisis.jpg') }}" alt="Soccer Field in NE">
+            <img src="{{ url_for('static', filename='images/Calgary_Soccer_Center.webp') }}" alt="Soccer Field in SE">
+            <!-- Add more images as needed -->
+        </div>
+    </section>
+    
+    <footer>
+        <button onclick="window.location.href='/date_time_selection';">View Fields</button>
+    </footer>
+</body>
+</html>

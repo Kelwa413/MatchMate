@@ -1,0 +1,52 @@
+/* static/css/homepage.css */
+body {
+    font-family: 'Trebuchet''Trebuchet MS';
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header, section, footer {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #006400;
+}
+
+button {
+    background-color: #008000; /* Green */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #006400;
+}
+
+#fields .img-container {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    flex-wrap: wrap; /* Allows images to wrap onto the next line if not enough space */
+    gap: 20px; /* Optional: Adds space between the images */
+}
+
+#fields img {
+    width: 200px; /* Set a fixed width or use max-width for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the images cover the area without stretching, cropping as needed */
+}
+
+#features ul {
+    list-style-position: inside; /* Moves the bullet points inside the content flow */
+    text-align: center; /* Centers the text and bullets */
+    padding: 0; /* Removes default padding */
+    margin: auto; /* Centers the list in the section if necessary */
+    display: inline-block; /* Treats the list as a block element, but only as wide as it needs to be */
+}

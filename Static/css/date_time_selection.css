@@ -1,0 +1,69 @@
+body {
+    font-family: 'Trebuchet''Trebuchet MS';
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #006400; /* Darker green */
+}
+
+form {
+    max-width: 400px;
+    width: 100%;
+    margin:  20px auto;
+    padding: 20px;
+    background-color: #add8e6;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Makes sure padding doesn't affect the overall width */
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #008000; /* Green */
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #006400; /* Darker green */
+}
+
+input[type="checkbox"] + label {
+    color: #333; /* Dark text for readability */
+    font-weight: normal;
+}
+
+/* Optional: Styling for warning messages or alerts */
+.alert {
+    padding: 10px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    text-align: center;
+}
